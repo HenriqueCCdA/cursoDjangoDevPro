@@ -3,3 +3,7 @@
 
 schedule: ''
 update: false
+
+requirements:
+  - Pipfile
+  - Pipfile.lock

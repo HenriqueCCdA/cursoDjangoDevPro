@@ -4,3 +4,5 @@ db.sqlite3
 contrib/env-sample
 .venv
 .env
+staticfiles/
+mediafiles/

@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 
 def video(request, slug):
-    print(slug)
-    print(request)
-    return render(request, 'aperitivos/video.html')
+    video = {'titulo': 'Video Aperitivo: Motivação',
+             'youtube_id': '4CNQuuQ0qWE'}
+    return render(request, 'aperitivos/video.html', context={'video': video})

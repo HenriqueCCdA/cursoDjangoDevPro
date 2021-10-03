@@ -7,3 +7,5 @@ contrib/env-sample
 staticfiles/
 mediafiles/
 .coverage
+.pgdata
+.pytest_cache

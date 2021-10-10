@@ -20,7 +20,7 @@ django-ordered-model = "*"
 flake8 = "*"
 pytest-cov = "*"
 codecov = "*"
-model-mommy = "*"
+model-bakery = "*"
 
 [requires]
 python_version = "3.9"

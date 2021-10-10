@@ -1,6 +1,6 @@
 import pytest
 from django.urls import reverse
-from model_mommy import mommy
+from model_bakery import baker
 
 from pypro.aperitivos.models import Video
 from pypro.base.django_assertions import assert_contains
@@ -8,7 +8,7 @@ from pypro.base.django_assertions import assert_contains
 
 @pytest.fixture
 def video(db):
-    return mommy.make(Video)
+    return baker.make(Video)
 
 
 @pytest.fixture

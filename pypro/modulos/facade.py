@@ -9,3 +9,7 @@ def listar_modulos_ordenados() -> List[Modulo]:
     :return:
     """
     return list(Modulo.objects.order_by('order').all())
+
+
+def encontar_modulo(slug: str) -> Modulo:
+    return Modulo.objects.get(slug=slug)

@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Python Pro - Aperitivo{% endblock title %}
+{% block description %} Página com vídeo gratuito de Python {% endblock description %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">{{ aula.titulo | default:"Faltando Título" }}</h1>
+            <iframe src="https://www.youtube.com/embed/{{ aula.youtube_id }}"
+                    width="560" height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}

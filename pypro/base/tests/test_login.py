@@ -2,6 +2,8 @@ import pytest
 from django.urls import reverse
 from model_bakery import baker
 
+from pypro.base.django_assertions import assert_contains
+
 
 @pytest.fixture
 def resp(client, db):
@@ -31,3 +33,16 @@ def test_login_form_page(resp):
 def test_login_redirect(resp_post):
     assert resp_post.status_code == 302
     assert resp_post.url == reverse('modulos:indice')
+
+
+@pytest.fixture
+def resp_home(client, db):
+    return client.get(reverse('base:home'))
+
+
+def test_botao_entrar_disponivel(resp_home):
+    assert_contains(resp_home, 'Entrar')
+
+
+def test_link_de_login_disponivel(resp_home):
+    assert_contains(resp_home, reverse('login'))

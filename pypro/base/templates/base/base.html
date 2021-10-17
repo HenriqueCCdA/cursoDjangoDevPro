@@ -8,7 +8,8 @@
 
     <title>{% block title %}Python Pro{% endblock title %}</title>
 
-    <meta name="description" content="{% block description %} Página do curso Python Pro {% endblock description %}">
+    <meta name="description"
+          content="{% block description %} Página do curso Python Pro {% endblock description %}">
     <meta name="author" content="Henrique de Andrade">
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
     <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
@@ -32,19 +33,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#"
+                   id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Módulos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     {% for modulo in MODULO %}
-                    <a class="dropdown-item" href="{{modulo.get_absolute_url}}">{{modulo.titulo}}</a>
+                    <a class="dropdown-item"
+                       href="{{modulo.get_absolute_url}}">{{modulo.titulo}}</a>
                     <div class="dropdown-divider"></div>
                     {% endfor %}
                 </div>
             </li>
         </ul>
         {% if user.is_authenticated %}
-
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"
+                   id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    {{ user.first_name }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button type="button" class="dropdown-item">Sair</button>
+                </div>
+            </li>
+        </ul>
         {% else %}
         <a class="btn btn-light my-2" href="{% url 'login' %}">Entrar</a>
         {% endif %}

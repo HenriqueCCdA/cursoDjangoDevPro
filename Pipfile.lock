@@ -143,11 +143,10 @@
         },
         "django-storages": {
             "hashes": [
-                "sha256:a88199d67e2fc032e92de02106315ed005ae22a2bf4df5269c0add4148fec739",
-                "sha256:cb079981e2e4fe16d7f41000913225140dc334a84f5b7c5e4fcc6b7e6a028222"
+                "sha256:204a99f218b747c46edbfeeb1310d357f83f90fa6a6024d8d0a3f422570cee84",
+                "sha256:a475edb2f0f04c4f7e548919a751ecd50117270833956ed5bd585c0575d2a5e7"
             ],
-            "markers": "python_version >= '3.5'",
-            "version": "==1.12.1"
+            "version": "==1.12.3"
         },
         "gunicorn": {
             "hashes": [

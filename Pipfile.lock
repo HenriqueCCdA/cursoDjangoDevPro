@@ -57,11 +57,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:1bbd2bbcb2ea35e3331178fd23a31166503c3d09ce605f6d99a3347a2216134b",
-                "sha256:38c0a98aefc3ff01d9970d84939ff48dd994c49c81cf34ee366860d774852f88"
+                "sha256:640b62110aa6d1c25553eceafb5bcd89aedeb84b191598d1f6492ad24374d285",
+                "sha256:7459766c4594f3b8877e8013f93f0dc6c6486acbeb7d9c9ae488396529cc2e84"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==1.21.63"
+            "version": "==1.23.23"
         },
         "certifi": {
             "hashes": [

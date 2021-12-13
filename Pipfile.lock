@@ -652,10 +652,10 @@
         },
         "tomli": {
             "hashes": [
-                "sha256:8dd0e9524d6f386271a36b41dbf6c57d8e32fd96fd22b6584679dc569d20899f",
-                "sha256:a5b75cb6f3968abb47af1b40c1819dc519ea82bcc065776a866e8d74c5ca9442"
+                "sha256:b5bde28da1fed24b9bd1d4d2b8cba62300bfb4ec9a6187a957e8ddb9434c5224",
+                "sha256:c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1"
             ],
-            "version": "==1.2.1"
+            "version": "==2.0.0"
         },
         "urllib3": {
             "hashes": [
